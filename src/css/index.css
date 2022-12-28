@@ -539,13 +539,16 @@
 }
 @media screen and (max-width: 500px) {
   .choose-car .container-seccion .container-car {
-    width: 60%;
+    width: 55%;
+    box-sizing: border-box;
   }
   .choose-car .container-seccion .info-car {
+    width: 35%;
+    box-sizing: border-box;
     margin-top: 20px;
   }
   .choose-car .container-seccion .info-car h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
   .choose-car .container-seccion .info-car .qualifications {
     margin-top: 60px;
