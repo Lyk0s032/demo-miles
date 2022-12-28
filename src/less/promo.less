@@ -1,0 +1,234 @@
+.choose-car{
+    margin-top:50px;
+    width:100%;
+    text-align: center;
+
+    .container-seccion{
+        .container-car{
+            width:40%;
+            display:inline-block;
+            vertical-align: top;
+            .car{
+  
+                box-sizing: border-box;
+                .plus-img{
+                    position:absolute;
+                    z-index:-1;
+                    margin-left:-35px;
+                }
+                .img-car{
+                    z-index:1;
+                    position:absolute;
+                    width:auto;
+                    transition:.3s;
+                }
+            }
+        }
+        .info-car{
+            vertical-align: top;
+            display:inline-block;
+
+            h2{
+                color: black;
+                .act{
+                    color: #EB5658;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+            
+            .qualifications{
+                .medicine-text{
+                    color: #666;
+                    width:100%;
+                    display:inline-block;
+                }
+                .title-qualifications{
+                    width:100%;
+                    box-sizing: border-box;
+                    padding:10px;
+                    .star-icon{
+                        vertical-align: top;
+                        display:inline-block;
+                        color: #0AB67B;
+                        font-size:22px;
+                    }
+                    h3{
+                        vertical-align: top;
+                        padding-left:15px;
+                        display:inline-block;
+                    }
+                }
+                .stars-qualifications{
+                    .star-icon{
+                        vertical-align: top;
+                        display:inline-block;
+                        background-color: #0AB67B;
+                        color:white;
+                        font-size:10px;
+                        padding:5px;
+                        border-radius:3px;
+                        margin-right: 5px;
+                    }
+                    .star-medium-icon{
+                        vertical-align: top;
+                        display:inline-block;
+                        background: linear-gradient(to left, rgb(255, 255, 255) 50%, #0AB67B 50%);
+                        color:white;
+                        font-size:10px;
+                        padding:5px;
+                        text-align: left;
+                        border-radius:3px;
+                    }
+                }
+                .numbers{
+                    font-size:14px;
+                    color: #666;
+                    strong{
+                        color: black; 
+                        font-size:12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:730px){
+    .choose-car{
+        margin-top:50px;
+        width:100%;
+        text-align: center;
+    
+        .container-seccion{
+            padding:0px;
+            .container-car{
+                width:50%;
+                display:inline-block;
+                vertical-align: top;
+                .car{
+                    width:100%;
+                    .img-car{
+                        width:100%;
+                        height:auto;
+                    }
+                }
+            }
+                .info-car{
+                    width:30%;
+                    margin-left:10px;
+                    margin-top:10px;
+                    h2{
+                        font-size:20px;
+                    }
+                }
+                .qualifications{
+                    width:100%;
+                    .medicine-text{
+                        font-size:12px;
+                    }
+                    .title-qualifications{
+                        margin-top:10px;
+                        width:100%;
+                        h3{
+                            font-size:20px;
+    
+                            h1{
+                                font-size:16px;
+                                margin-left:10px;
+                                display:inline-block;
+                            }
+                        }
+                    }
+                    .stars-qualifications{
+                        width:100%;
+                        text-align: center;
+                    }
+                }
+
+        }
+
+    }
+}
+@media screen and (max-width:500px){
+    .choose-car{    
+        .container-seccion{
+            .container-car{
+                width:60%;
+
+            }
+            .info-car{
+                margin-top:20px;
+                h2{
+                    font-size:20px;
+                }
+
+                .qualifications{
+                    
+                    .medicine-text{
+                        width:70%;
+                        font-size:16px;
+                    }
+                    margin-top:60px;
+                    position:absolute;
+                    left:0;
+                    width:100%;
+                    text-align: center;
+
+                    .title-qualifications{
+                    margin-top:40px;
+                    width:50%;
+                    display:inline-block;
+                    box-sizing: border-box;
+                    padding:0px;
+                    margin-left:20px;
+                    .star-icon{
+                        vertical-align: top;
+                        display:inline-block;
+                        color: #0AB67B;
+                        font-size:22px;
+                    }
+                    h3{
+                        vertical-align: top;
+                        padding-left:5px;
+                        display:inline-block;
+                        font-size:16px;
+
+                        h1{
+                            margin:0px;
+                            padding:0px;
+                            font-size:18px;
+                            margin-left:10px;
+                            display:inline-block;
+                        }
+                    }
+                }
+                .stars-qualifications{
+                    width:40%;
+                    display:inline-block;
+                    text-align: left;
+                    .star-icon{
+                        vertical-align: top;
+                        display:inline-block;
+                        background-color: #0AB67B;
+                        color:white;
+                        font-size:10px;
+                        padding:5px;
+                        border-radius:3px;
+                        margin-right: 5px;
+                    }
+                    .star-medium-icon{
+                        vertical-align: top;
+                        display:inline-block;
+                        background: linear-gradient(to left, rgb(255, 255, 255) 50%, #0AB67B 50%);
+                        color:white;
+                        font-size:10px;
+                        padding:5px;
+                        text-align: left;
+                        border-radius:3px;
+                    }
+                }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,255 @@
+.Home{
+    width:100%;
+    box-sizing: border-box;
+    .font-div{
+        width:100%;
+        height:400px;
+        background: url('../components/home/img/font2.png') no-repeat  center bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        border-radius: 0% 0% 40% 40%;
+        text-align: center;
+        display:inline-block;
+        .container-font{
+                margin-top:30px;
+
+
+            .title01{
+                background:none;
+                
+                h3{
+                    color:white;
+                }
+            }
+            .options-container{
+                text-align: center;
+                background:none;
+                .box-white{
+                    border:1px solid #ccc;
+                    background-color:white;
+                    width:50%;
+                    display:inline-block;
+                    padding:30px;
+                    border-radius:10px;
+                    margin:10px;
+                    box-sizing: border-box;
+                    text-align: left;
+                    padding-left:30px;
+                    .left-icon{
+                        display:inline-block;
+                        vertical-align: top;
+                        padding:5px;
+                        .icon-small-box{
+                            color: #EB5658;
+                            font-size:20px;
+                            margin-top:5px;
+                        }
+                        .top-small{
+                            color: #EB5658;
+                            font-size:12px;
+                            float:right;
+                        }
+                    }
+                    .right-info{
+                        display:inline-block;
+                        padding-left:30px;
+                        text-align: left;
+                        left:0;
+                        .title{
+                            font-size:14px;
+                            color: grey;
+                        }
+                        .descript{
+                            color: black;
+                            font-size:16px;
+                        }
+                    }
+                    .time{
+                        width:45%;
+                        box-sizing: border-box;
+                        display:inline-block; 
+                        margin-right: 10px;
+                        .calendary-icon{
+                            display:inline-block;
+                            font-size:26px;
+                            color:#EB5658;
+                            
+                        }
+                        .info{
+                            display:inline-block;
+                            padding:10px;
+
+                            .title{
+                                color: grey;
+                                font-size:12px;
+                            }
+                            .descript{
+                                color:black;
+                                font-size:14px;
+                            }
+                        }
+                    }
+                }
+                .btn-filter{
+                    width:50%;
+                    display:inline-block;
+                    text-align: left;
+                    .button{
+                        vertical-align: top;
+                        display: inline-block;
+                        #btn-switch{
+                            display:none;
+                        }
+                        .lbl-switch{
+                            outline: 0px;
+                            border:2px solid white;
+                            display:inline-block;
+                            width:35px;
+                            height: 20px;
+                            background-color: #EF6368;
+                            border-radius:100px;
+                            position:relative;
+                            cursor:pointer;
+                        }
+                        #btn-switch:checked~ .lbl-switch{
+                            background-color: #61A0FF;
+                            
+                        }
+                       
+                        .lbl-switch:after{
+                            position:absolute;
+                            content:'';
+                            width:12px;
+                            height:12px;
+                            background: #fff;
+                            border-radius: 100px;
+                            top:4px;
+                            left:5px;
+                            transition: 0.3s;
+                        }
+                        #btn-switch:checked~ .lbl-switch:after{
+                            left:20px;
+                        }
+                    }
+                    span{
+                        color:white;
+                        font-size:12px;
+                        margin-left:10px;
+                        vertical-align: center;
+                    }
+                    
+                }
+            }
+            
+        }
+        .bottom-container{
+            margin-top:5px;
+            button{
+                width:10%;
+                border:5px solid white;
+                padding:10px;
+                background-color: #EB5658;
+                border-radius:10px;
+                -webkit-box-shadow: 0px 2px 5px -3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 2px 5px -3px rgba(0,0,0,0.75);
+                box-shadow: 0px 2px 5px -3px rgba(0,0,0,0.75);
+                transition:.3s;
+                cursor:pointer;
+                .search-icon{
+                    font-size:32px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+            button:hover{
+                background-color: #ec4c4f;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .Home{
+        
+        .font-div{
+            height:270px;
+            .container-font{
+                margin-top:10px;
+
+                .title01{                    
+                    h3{
+                        font-size:14px;
+                    }
+                }
+                .options-container{
+                    .box-white{
+                        width:70%;
+                        padding:10px;
+                        .right-info{
+                            .descript{
+                                font-size:14px;
+                            }
+                        }
+                    }
+                    .btn-filter{
+                        width:70%;          
+                    }
+                }
+                
+            }
+            .bottom-container{
+                margin-top:0px;
+                button{
+                    width:20%;
+                    padding:10px;
+                    .search-icon{
+                        font-size:26px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:410px){
+    .Home{
+        
+        .font-div{
+            height:270px;
+            border-radius: 0% 0% 20% 20%;
+            .container-font{
+                margin-top:10px;
+
+                .title01{                    
+                    h3{
+                        font-size:14px;
+                    }
+                }
+                .options-container{
+                    .box-white{
+                        width:90%;     
+                    }
+                    .btn-filter{
+                        width:90%;
+                    }
+                    
+                }
+                
+            }
+            .bottom-container{
+                button{
+                    width:30%;
+                    .search-icon{
+                        font-size:26px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
